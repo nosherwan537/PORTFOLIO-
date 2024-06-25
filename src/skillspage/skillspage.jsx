@@ -8,8 +8,8 @@ const SkillsPage = () => {
 
     return (
         <div className='h-screen overflow-y-auto pb-20'>
-            <div className='flex justify-between text-white'>
-                <div className='relative top-3 left-10 space-y-4'>
+            <div className='flex flex-col md:flex-row justify-center md:justify-between gap-4 text-white'>
+                <div className='relative top-3 md:left-10 space-y-4'>
                     <section className='backdrop-blur-sm bg-white/30 rounded-lg p-3 fade-in '>
                         <h1 className='text-xl text-hover text-glow'>LANGUAGES</h1>
                         <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
@@ -37,7 +37,7 @@ const SkillsPage = () => {
                         </ul>
                     </section>
                 </div>
-                <div className='relative top-3 right-52 space-y-4'>
+                <div className='relative top-3 md:right-10 space-y-4'>
                     <section className='backdrop-blur-sm bg-white/30 rounded-lg p-3 fade-in '>
                         <h1 className='text-xl text-hover text-glow'>FREELANCING</h1>
                         <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>

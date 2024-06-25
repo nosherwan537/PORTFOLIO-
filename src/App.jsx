@@ -17,11 +17,11 @@ function App() {
         <div className="relative z-10 flex flex-col justify-start h-full w-full">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            <Route path="/home" element={<Homepage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/skills" element={<SkillsPage />} />
             <Route path="/education" element={<EducationPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} /> {/* Default redirect to homepage */}
+            <Route path="*" element={<Navigate to="/home" replace />} /> {/* Default redirect to homepage */}
           </Routes>
           <Footer />
         </div>

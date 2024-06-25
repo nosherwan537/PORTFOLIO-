@@ -1,11 +1,10 @@
 import React from "react";
-import { Button } from "@/components/ui/button"; // Assuming this is imported correctly for your project
 
 const EducationPage = () => {
     return (
-        <div className="text-white relative top-2 left-2">
+        <div className="text-white relative top-2 left-2 overflow-y-auto pb-20">
             <section className="fade-in">
-                <h1 className="text-xl text-hover text-glow">SCHOOL:</h1>
+                <h1 className="text-xl text-hover text-glow mb-8">SCHOOL:</h1>
                 <p>
                     OPF BOYS COLLEGE H-8/4 ISLAMABAD
                 </p>
