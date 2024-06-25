@@ -1,0 +1,13 @@
+/* src/AppBackground.css */
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background: radial-gradient(125% 150% at 50% 30%, #000 30%, #63e 100%);
+}
+
