@@ -8,6 +8,7 @@ import Footer from './footer/footer';
 import AboutPage from './aboutpage/aboutpage';
 import SkillsPage from './skillspage/skillspage';
 import EducationPage from './educationpage/educationpage';
+import LiveProjects from './liveprojects/liveprojects';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/home" element={<Homepage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/projects" element={<LiveProjects />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="*" element={<Navigate to="/home" replace />} /> {/* Default redirect to homepage */}
           </Routes>

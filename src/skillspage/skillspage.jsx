@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 const SkillsPage = () => {
     const handleButtonClick = () => {
@@ -25,6 +26,7 @@ const SkillsPage = () => {
                         <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
                             <li>React</li>
                             <li>Node.js</li>
+                            <li>NEXT</li>
                             <li>Express</li>
                             <li>Flask</li>
                         </ul>
@@ -38,6 +40,7 @@ const SkillsPage = () => {
                     </section>
                 </div>
                 <div className='relative top-3 md:right-10 space-y-4'>
+                    {/* 
                     <section className='backdrop-blur-sm bg-white/30 rounded-lg p-3 fade-in '>
                         <h1 className='text-xl text-hover text-glow'>FREELANCING</h1>
                         <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
@@ -51,8 +54,9 @@ const SkillsPage = () => {
                             <li>LeetCode</li>
                         </ul>
                     </section>
+                    */}
                     <section className='backdrop-blur-sm bg-white/30 rounded-lg p-3 fade-in'>
-                        <h1 className='text-xl text-hover text-glow '>PROJECTS</h1>
+                        <h1 className='text-xl text-hover text-glow '>SOME NOTABLE PROJECTS</h1>
                         <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
                             <li>Portfolio</li>
                             <li>TWITTER CLONE</li>
@@ -61,13 +65,19 @@ const SkillsPage = () => {
                             <li>AI CHATBOT TRAINED ON LOGISTIC REGRESSION</li>
                             <li>UNIVERSITY TRANSPORT APP</li>
                             <li>SFML C++ 2D GAME</li>
+                            <li>Realtime Story Writing App</li>
                         </ul>
                         <br />
-                        <p>
+                        <div className='relative flex gap-2'>
                             <Button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={handleButtonClick}>
                                 View Projects
                             </Button>
-                        </p>
+                            <Link to='/projects'>
+                                <Button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                    View Live Projects
+                                </Button>
+                            </Link>
+                        </div>
                     </section>
                 </div>
             </div>

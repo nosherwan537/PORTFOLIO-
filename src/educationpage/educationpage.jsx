@@ -28,14 +28,15 @@ const EducationPage = () => {
                 <h1 className="text-xl text-hover text-glow">CERTIFICATIONS AND ACHIEVEMENTS:</h1>
                 <p>
                 <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
-                    <li>Second Position in Engineering in College</li>
-                    <li>Supervised Learning: Regression and Classification by Andrew Ng</li>
+                    {/*<li>Second Position in Engineering in College</li>*/}
+                    <li>Machine Learning Specialization by Andrew Ng</li>
                     <li>Java course by Krish Valley (Udemy)</li>
                     <li>Javascript course by YouAccel Training</li>
                 </ul>
                 </p>
             </section>
             <br />
+            {/*
             <section className="fade-in">
                 <h1 className="text-xl text-hover text-glow">GRADES:</h1>
                 <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
@@ -44,6 +45,7 @@ const EducationPage = () => {
                     <li>Bachelors: 3.55 CGPA</li>
                 </ul>
             </section>
+            */}
         </div>
     );
 };

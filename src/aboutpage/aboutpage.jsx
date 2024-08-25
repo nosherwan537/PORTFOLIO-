@@ -25,10 +25,10 @@ const AboutPage = () => {
                         <a href="mailto:tahirnosherwan@gmail.com">tahirnosherwan@gmail.com</a>
                     </p>
                 </section>
-                <section className="mb-4">
+                <section className="mb-12">
                     <h1 className="text-xl text-hover text-glow">ABOUT:</h1>
                     <p>
-                        I am Nosherwan Tahir, a passionate BE Software Engineering student at National University of Science and Technology, Islamabad. I am a full stack web developer and have made several projects using latest tools like React.js, Next.js, and Node.js. Along with this, I have proficiency in languages like C++, Java, and Javascript. Due to my great interest in AI, currently I am doing some Machine Learning courses and looking forward to making some exciting projects. My main aim is always to follow and do what I like so instead of being only focused on one domain, I like to study and explore various concepts in diverse fields of Computer Science.
+                        I am Nosherwan Tahir, a passionate BE Software Engineering student at National University of Science and Technology, Islamabad. I am a full stack web developer and have made several projects using latest tools like React.js, Next.js, and Node.js. Along with this, I have proficiency in languages like C++, Java, and Javascript. Due to my great interest in AI, I took some Machine Learning courses and looking forward to making some exciting projects. My main aim is always to follow and do what I like so instead of being only focused on one domain, I like to study and explore various concepts in diverse fields of Computer Science.
                     </p>
                 </section>
             </div>
