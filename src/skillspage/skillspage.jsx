@@ -103,8 +103,7 @@ const SkillsPage = () => {
                 title="TOOLS & PLATFORMS"
                 skills={[
                   { name: "Git/GitHub", level: "90%" },
-                  { name: "Docker", level: "70%" },
-                  { name: "AWS", level: "65%" },
+                  { name: "Supabase", level: "70%" },
                   { name: "Firebase", level: "80%" },
                   { name: "MongoDB", level: "75%" },
                 ]}
@@ -202,10 +201,10 @@ const SkillsPage = () => {
 
                 <div className="space-y-4">
                   {[
-                    "Advanced React Patterns",
+                    "Deep Learning",
                     "Machine Learning Applications",
-                    "Web3 Development",
-                    "Cloud Architecture",
+                    "Operating Systems",
+                    "Computer Vision",
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3 group">
                       <div className="w-2 h-2 rounded-full bg-theme-sage group-hover:bg-theme-primary transition-colors duration-300"></div>

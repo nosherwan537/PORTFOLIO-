@@ -18,7 +18,7 @@ const LiveProjects = () => {
     },
     {
       name: "Portfolio Website",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images.jpeg",
       link: "#",
       details:
         "My personal portfolio website showcasing my skills, projects, and experience. Built with React and modern design principles.",
@@ -27,7 +27,7 @@ const LiveProjects = () => {
     },
     {
       name: "Twitter Clone",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images.jpeg",
       link: "#",
       details:
         "A Twitter clone with core functionalities like tweeting, following, and timeline. Built with React, Node.js, and MongoDB.",

@@ -4,9 +4,9 @@ const EducationPage = () => {
   const educationData = [
     {
       title: "SCHOOL",
-      institution: "OPF BOYS COLLEGE",
+      institution: "OPF COLLEGE",
       location: "H-8/4 ISLAMABAD",
-      years: "2010 - 2018",
+      years: "2010 - 2021",
       icon: "🏫",
       color: "theme-primary",
     },
@@ -15,7 +15,7 @@ const EducationPage = () => {
       institution: "OPF BOYS COLLEGE",
       location: "H-8/4 ISLAMABAD",
       qualification: "FSc Pre-Engineering",
-      years: "2018 - 2020",
+      years: "2021 - 2023",
       icon: "🎓",
       color: "theme-accent",
     },
@@ -23,7 +23,7 @@ const EducationPage = () => {
       title: "UNIVERSITY",
       institution: "NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY",
       qualification: "Bachelors in Software Engineering",
-      years: "2020 - Present",
+      years: "2023 - Present",
       icon: "🏛️",
       color: "theme-rust",
     },
@@ -74,11 +74,11 @@ const EducationPage = () => {
 
 const TimelineItem = ({ data, position, delay }) => {
   return (
-    <div className={`relative flex items-center justify-center mb-16`}>
+    <div className="relative flex flex-col items-center justify-center mb-16 md:flex-row">
       <ScrollReveal
         delay={delay}
         direction={position === "left" ? "right" : "left"}
-        className={`w-5/12 ${position === "right" ? "ml-auto" : "mr-auto"}`}
+        className={`w-full md:w-5/12 ${position === "right" ? "md:ml-auto" : "md:mr-auto"}`}
       >
         <div
           className={`glass-card p-6 border-l-4 border-${data.color} hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1`}
@@ -109,13 +109,12 @@ const TimelineItem = ({ data, position, delay }) => {
         </div>
       </ScrollReveal>
 
-      {/* Timeline dot */}
-      <div
-        className={`absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-${data.color} z-10 shadow-glow`}
-      ></div>
+      {/* Timeline dot remains centered */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-${data.color} z-10 shadow-glow hidden md:block"></div>
     </div>
-  )
-}
+  );
+};
+
 
 export default EducationPage
 

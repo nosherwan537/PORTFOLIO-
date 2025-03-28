@@ -114,17 +114,9 @@ const Homepage = () => {
           </Link>
         </div>
 
-        <div className="mt-16 md:mt-24">
-          <div className="flex flex-col items-center">
-            <p className="text-theme-light/60 mb-2">Scroll to explore</p>
-            <div className="w-6 h-10 border-2 border-theme-light/30 rounded-full flex justify-center p-1">
-              <div className="w-1 h-2 bg-theme-primary rounded-full animate-bounce-slow"></div>
-            </div>
-          </div>
-        </div>
+      
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-theme-dark to-transparent"></div>
     </div>
   )
 }
