@@ -1,53 +1,121 @@
-import React from "react";
+import ScrollReveal from "../components/scroll-reveal"
 
 const EducationPage = () => {
-    return (
-        <div className="text-white relative top-2 left-2 overflow-y-auto pb-20">
-            <section className="fade-in">
-                <h1 className="text-xl text-hover text-glow mb-8">SCHOOL:</h1>
-                <p>
-                    OPF BOYS COLLEGE H-8/4 ISLAMABAD
-                </p>
-            </section>
-            <br />
-            <section className="fade-in">
-                <h1 className="text-xl text-hover text-glow">COLLEGE:</h1>
-                <p>
-                    FSC from OPF BOYS COLLEGE H-8/4 ISLAMABAD
-                </p>
-            </section>
-            <br />
-            <section className="fade-in">
-                <h1 className="text-xl text-hover text-glow">UNIVERSITY:</h1>
-                <p>
-                    Bachelors in Software Engineering from NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY
-                </p>
-            </section>
-            <br />
-            <section className="fade-in">
-                <h1 className="text-xl text-hover text-glow">CERTIFICATIONS AND ACHIEVEMENTS:</h1>
-                <p>
-                <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
-                    {/*<li>Second Position in Engineering in College</li>*/}
-                    <li>Machine Learning Specialization by Andrew Ng</li>
-                    <li>Java course by Krish Valley (Udemy)</li>
-                    <li>Javascript course by YouAccel Training</li>
-                </ul>
-                </p>
-            </section>
-            <br />
-            {/*
-            <section className="fade-in">
-                <h1 className="text-xl text-hover text-glow">GRADES:</h1>
-                <ul style={{ listStyleType: 'disc', marginLeft: '1rem' }}>
-                    <li>Matriculation: 97.5%</li>
-                    <li>Intermediate: 91.81%</li>
-                    <li>Bachelors: 3.55 CGPA</li>
-                </ul>
-            </section>
-            */}
-        </div>
-    );
-};
+  const educationData = [
+    {
+      title: "SCHOOL",
+      institution: "OPF BOYS COLLEGE",
+      location: "H-8/4 ISLAMABAD",
+      years: "2010 - 2018",
+      icon: "🏫",
+      color: "theme-primary",
+    },
+    {
+      title: "COLLEGE",
+      institution: "OPF BOYS COLLEGE",
+      location: "H-8/4 ISLAMABAD",
+      qualification: "FSc Pre-Engineering",
+      years: "2018 - 2020",
+      icon: "🎓",
+      color: "theme-accent",
+    },
+    {
+      title: "UNIVERSITY",
+      institution: "NATIONAL UNIVERSITY OF SCIENCES AND TECHNOLOGY",
+      qualification: "Bachelors in Software Engineering",
+      years: "2020 - Present",
+      icon: "🏛️",
+      color: "theme-rust",
+    },
+    {
+      title: "CERTIFICATIONS",
+      items: [
+        "Machine Learning Specialization by Andrew Ng",
+        "Java course by Krish Valley (Udemy)",
+        "Javascript course by YouAccel Training",
+      ],
+      icon: "📜",
+      color: "theme-denim",
+    },
+  ]
 
-export default EducationPage;
+  return (
+    <div className="min-h-screen pt-24 pb-16">
+      <div className="container mx-auto px-4">
+        <ScrollReveal>
+          <h1 className="section-title text-center">Educational Journey</h1>
+        </ScrollReveal>
+
+        <ScrollReveal delay={300}>
+          <p className="text-center text-theme-light/70 max-w-2xl mx-auto mb-16">
+            My academic path has equipped me with both theoretical knowledge and practical skills, forming the
+            foundation of my technical expertise.
+          </p>
+        </ScrollReveal>
+
+        <div className="relative mt-20">
+          {/* Timeline line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-theme-secondary"></div>
+
+          {/* Education items */}
+          {educationData.map((item, index) => (
+            <TimelineItem
+              key={index}
+              data={item}
+              position={index % 2 === 0 ? "left" : "right"}
+              delay={400 + index * 200}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const TimelineItem = ({ data, position, delay }) => {
+  return (
+    <div className={`relative flex items-center justify-center mb-16`}>
+      <ScrollReveal
+        delay={delay}
+        direction={position === "left" ? "right" : "left"}
+        className={`w-5/12 ${position === "right" ? "ml-auto" : "mr-auto"}`}
+      >
+        <div
+          className={`glass-card p-6 border-l-4 border-${data.color} hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1`}
+        >
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-3xl">{data.icon}</span>
+            <h2 className={`font-display text-xl text-${data.color}`}>{data.title}</h2>
+          </div>
+
+          {data.institution && <p className="text-theme-light font-semibold mb-1">{data.institution}</p>}
+
+          {data.location && <p className="text-theme-light/80 mb-1">{data.location}</p>}
+
+          {data.qualification && <p className={`text-${data.color} mb-1`}>{data.qualification}</p>}
+
+          {data.years && <p className="text-theme-light/70 italic mb-2">{data.years}</p>}
+
+          {data.items && (
+            <ul className="mt-3 space-y-2">
+              {data.items.map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className={`text-${data.color} mt-1`}>•</span>
+                  <span className="text-theme-light">{item}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </ScrollReveal>
+
+      {/* Timeline dot */}
+      <div
+        className={`absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-${data.color} z-10 shadow-glow`}
+      ></div>
+    </div>
+  )
+}
+
+export default EducationPage
+
