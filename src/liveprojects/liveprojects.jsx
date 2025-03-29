@@ -17,21 +17,21 @@ const LiveProjects = () => {
       color: "theme-primary",
     },
     {
-      name: "Portfolio Website",
-      image: "/images.jpeg",
+      name: "Spotify Clone",
+      image: "/image.png",
       link: "#",
       details:
-        "My personal portfolio website showcasing my skills, projects, and experience. Built with React and modern design principles.",
-      tags: ["React", "Tailwind CSS", "Vite"],
+        "My version of Spotify, featuring a sleek UI and core functionalities like playlist management and music streaming.",
+      tags: ["HTML", "CSS", "JS"],
       color: "theme-accent",
     },
     {
-      name: "Twitter Clone",
-      image: "/images.jpeg",
-      link: "#",
+      name: "Edsorcerer",
+      image: "/ed.png",
+      link: "https://ed-sorcerer.vercel.app/",
       details:
-        "A Twitter clone with core functionalities like tweeting, following, and timeline. Built with React, Node.js, and MongoDB.",
-      tags: ["React", "Node.js", "MongoDB"],
+        "An AI-powered web application meant for virtual study. Built with Next.js and Supabase.",
+      tags: ["Next.js", "Gemini", "Supabase"],
       color: "theme-rust",
     },
   ]

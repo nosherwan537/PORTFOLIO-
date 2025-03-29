@@ -151,11 +151,12 @@ const SkillsPage = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    "Portfolio",
+                    "AI Powered Virtual Study App",
                     "TWITTER CLONE",
                     "SPOTIFY CLONE",
+                    'LLM Powered Search Engine',
                     "CHAT APP",
-                    "AI CHATBOT",
+                    "AI Instagram Influencer",
                     "UNIVERSITY TRANSPORT APP",
                     "SFML C++ 2D GAME",
                     "Realtime Story Writing App",

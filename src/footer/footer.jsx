@@ -2,8 +2,8 @@ const Footer = () => {
   const socialLinks = [
     { name: "LinkedIn", icon: <LinkedInIcon />, url: "https://linkedin.com/in/yourprofile" },
     { name: "GitHub", icon: <GitHubIcon />, url: "https://github.com/nosherwan537" },
-    { name: "Fiverr", icon: <FiverrIcon />, url: "https://fiverr.com/yourprofile" },
-    { name: "Upwork", icon: <UpworkIcon />, url: "https://upwork.com/yourprofile" },
+    { name: "Fiverr", icon: <FiverrIcon />, url: "https://www.fiverr.com/s/38L8q4m" },
+    { name: "Upwork", icon: <UpworkIcon />, url: "https://www.upwork.com/freelancers/~01728fa60bd06ee68a?mp_source=share" },
   ]
 
   return (
@@ -64,18 +64,17 @@ const GitHubIcon = () => (
 )
 
 const FiverrIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-    <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
-    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 50 50">
+    <path d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 26.5 11 C 21.579 11 18.409109 14.037 18.037109 19 L 14 19 L 14 25 L 18 25 L 18 36 L 24 36 L 24 25 L 28 25 L 28 36 L 34 36 L 34 19 L 24.066406 19 C 24.360406 17.001 25.579 17 26.5 17 L 29.03125 17 L 29.03125 11 L 26.5 11 z"></path>
   </svg>
 )
 
 const UpworkIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 50 50">
+    <path d="M 1 9 A 1.0001 1.0001 0 0 0 0 10 L 0 24.5 C 0 30.832314 5.1676857 36 11.5 36 C 17.222701 36 21.784718 31.707225 22.650391 26.220703 C 23.266946 27.074852 23.852862 27.94719 24.548828 28.728516 C 23.305285 33.997601 21.75435 40.586226 21.003906 43.771484 A 1.0001 1.0001 0 0 0 21.976562 45 L 28.140625 45 A 1.0001 1.0001 0 0 0 29.115234 44.228516 C 29.796783 41.335284 30.661366 37.663644 31.474609 34.212891 C 33.325586 35.182074 35.46699 36 38 36 C 44.607457 36 50 30.607457 50 24 C 50 17.392543 44.607457 12 38 12 C 33.351597 12 29.329494 14.73649 27.349609 18.787109 C 25.250367 15.153046 23.679535 11.321256 23.107422 9.671875 A 1.0001 1.0001 0 0 0 22.162109 9 L 16 9 A 1.0001 1.0001 0 0 0 15 10 L 15 24.5 C 15 26.438477 13.438477 28 11.5 28 C 9.5615232 28 8 26.438477 8 24.5 L 8 10 A 1.0001 1.0001 0 0 0 7 9 L 1 9 z"></path>
   </svg>
 )
+
 
 export default Footer
 

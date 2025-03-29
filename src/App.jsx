@@ -12,6 +12,7 @@ import EducationPage from "./educationpage/educationpage"
 import LiveProjects from "./liveprojects/liveprojects"
 import NotFound from "./components/not-found"
 import Particles from "./components/particles"
+import ScrollToTop from "./components/ScrollTop"
 
 // Page transition wrapper
 const PageTransition = ({ children }) => {
@@ -57,6 +58,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="relative min-h-screen overflow-hidden font-body">
         {/* Background elements with lower z-index */}
         <div className="fixed inset-0 z-0">
