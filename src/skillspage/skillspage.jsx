@@ -152,8 +152,6 @@ const SkillsPage = () => {
                 <div className="grid grid-cols-2 gap-4">
                   {[
                     "AI Powered Virtual Study App",
-                    "TWITTER CLONE",
-                    "SPOTIFY CLONE",
                     'LLM Powered Search Engine',
                     "CHAT APP",
                     "AI Instagram Influencer",

@@ -17,15 +17,6 @@ const LiveProjects = () => {
       color: "theme-primary",
     },
     {
-      name: "Spotify Clone",
-      image: "/image.png",
-      link: "#",
-      details:
-        "My version of Spotify, featuring a sleek UI and core functionalities like playlist management and music streaming.",
-      tags: ["HTML", "CSS", "JS"],
-      color: "theme-accent",
-    },
-    {
       name: "Edsorcerer",
       image: "/ed.png",
       link: "https://ed-sorcerer.vercel.app/",
